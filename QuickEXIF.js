@@ -2692,7 +2692,12 @@ SOFTWARE.
                 if (!userGroups.includes('autoconfirmed') && !userGroups.includes('confirmed')) {
                     return false;
                 }
+            } else if (restrictionLevel === 'editautopatrolprotected') {
+                if (!userGroups.includes('autopatrolled') && !userGroups.includes('patroller')) {
+                    return false;
+                }
             } else if (!userGroups.includes(restrictionLevel)) {
+                // This captures sysop protection
                 return false;
             }
         }
