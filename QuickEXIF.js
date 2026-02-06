@@ -3706,6 +3706,7 @@ SOFTWARE.
             const result = await api.upload(file, {
                 filename: currentFileName,
                 comment: editSummary,
+                tags: 'QuickEXIF',
                 ignorewarnings: 1 // Allow overwriting existing file
             });
 
