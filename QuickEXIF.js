@@ -3687,7 +3687,7 @@ SOFTWARE.
                 summaryParts.push('Removed ' + Array.from(fieldsByAction.removed).join(', '));
             }
 
-            let editSummary = 'EXIF via QuickEXIF';
+            let editSummary = 'Change EXIF via QuickEXIF';
             if (summaryParts.length > 0) {
                 editSummary += ': ' + summaryParts.join('; ');
             }
